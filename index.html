@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batrisyia Damia Khairunnisa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    .hero {
+  text-align: center;
+  padding: 50px 20px 20px;
+  position: relative;
+}
+
+.hero-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #0ff;
+  box-shadow: 0 0 25px #0ff, 0 0 50px #f0f;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #f0f;
+  animation: glowText 2s infinite alternate;
+}
+.hero-name {
+  font-size: 1.6rem;
+  color: #ff66cc;
+  text-shadow: 0 0 10px #ff66cc, 0 0 20px #0ff;
+  animation: glowName 2s infinite alternate;
+  margin-top: 40px; /* Jarak lebih jauh dari teks di atas */
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+
+@keyframes glowName {
+  from {
+    text-shadow: 0 0 5px #ff66cc;
+  }
+  to {
+    text-shadow: 0 0 20px #ff66cc, 0 0 30px #0ff;
+  }
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px #f0f;
+  }
+  to {
+    text-shadow: 0 0 20px #ff66cc, 0 0 40px #f0f;
+  }
+}
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0ff 0%, #00f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      padding: 100px 20px 50px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1a1a1a;
+      padding: 10px 0;
+    }
+  nav span.nav-disabled {
+  color: #0ff;
+  margin: 0 15px;
+  font-weight: bold;
+  opacity: 0.5;
+  cursor: default;
+  text-decoration: none;
+}
+
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f0f;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+.about-image {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 220px;
+  height: auto;
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #0ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.foto-favorit {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.foto-favorit h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foto-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.foto-gallery img {
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #f0f, 0 0 45px #0ff;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #f0f, 0 0 60px #0ff;
+}
+#about p, #about h2 {
+  text-align: center;
+}
+.about-section {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.birthday-text {
+  margin: 10px auto;
+  max-width: 700px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: white;
+}
+.foto-favorit {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.foto-favorit h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.foto-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Memberikan jarak antar gambar */
+  padding: 20px;
+}
+
+.foto-gallery img {
+  width: 220px; /* Tetapkan lebar agar gambar tidak terlalu sempit */
+  height: 330px; /* Tetapkan tinggi agar tidak gepeng */
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+  border-radius: 15px;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #f0f, 0 0 45px #0ff;
+}
+
+@media (max-width: 600px) {
+  .foto-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-gallery img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+    .neon-box {
+      background-color: #1f1f1f;
+      padding: 30px;
+      border: 2px solid #0ff;
+      box-shadow: 0 0 15px #0ff;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .neon-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #f0f, 0 0 40px #0ff;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: none;
+      border: 2px solid #0ff;
+      color: #0ff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background-color: #0ff;
+      color: #000;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+    <section class="hero">
+  <img src="foto pacarku.jpg" alt="Foto Pacarku" class="hero-img" />
+  <h2 class="hero-text">Selamat Ulang Tahun Pacarku 💖</h2>
+  <h3 class="hero-name">Batrisyia Damia Khairunnisa</h3>
+</section>
+
+  <header></header>
+
+  <nav>
+  <span class="nav-disabled">9</span>
+  <span class="nav-disabled">Juli</span>
+  <span class="nav-disabled">2025</span>
+</nav>
+
+  <section id="about" class="about-section">
+  <div class="neon-box">
+    <div class="about-image">
+      <img src="pacarku1.jpg" alt="Foto Kenangan">
+    </div>
+    <h2>Wishlist</h2>
+    <p class="birthday-text">
+      🎂 <strong>Selamat Ulang Tahun!</strong> 🎂
+    </p>
+    <p class="birthday-text">
+      Di hari yang spesial ini, Awan mau mengucapkan selamat ulang tahun buat pacarku!<br>
+      Semoga di umur yang semakin bertambah ini, semua impian dan harapannya sayang semakin dekat untuk terwujud.
+    </p>
+    <p class="birthday-text">
+      <strong>Doanya Awan buat Sayang:</strong><br>
+      Semoga pacarku selalu diberikan kesehatan dan kebahagiaan.<br>
+      Semoga setiap langkah sayangku penuh dengan berkah dan kemudahan.<br>
+      Semoga cinta dan kasih sayang selalu menyertai sayang, baik dari keluarga, teman, maupun Awan.
+    </p>
+    <p class="birthday-text">
+      Semoga sayang diberi kesabaran yang lebih!<br>
+      Aku bersyukur bisa merayakan bareng sayangkuu.<br>
+      Semoga tahun ini membawa banyak kebahagiaan dan keceriaan yaaa!
+    </p>
+  </div>
+</section>
+
+
+
+
+  <section class="foto-favorit">
+  <div class="neon-box">
+    <h2>Foto Favorit Awan</h2>
+    <div class="foto-gallery">
+      <img src="pacarku2.JPG" alt="Awan 1">
+      <img src="pacarku3.jpg" alt="Awan 2">
+      <img src="pacarku4.JPG" alt="Awan 3">
+      <img src="pacarku1.jpg" alt="Awan 3">
+    </div>
+  </div>
+</section>
+
+  <section id="contact">
+    <div class="neon-box">
+      <h2>Silahkan Diisi Sayangku</h2>
+      <form onsubmit="event.preventDefault(); alert('Message Sent!')">
+        <input type="text" placeholder="Siapa Orang yang kamu sayang" required style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;">
+        <input type="text" placeholder="Sebutkan makanan favorit awan :p" required style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;">
+        <textarea placeholder="Wishlist sayang buatt kedepannn" required style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div id="whatsapp-container" style="display: none; text-align: center; margin: 40px 0;">
+  <a href="https://wa.me/628812740058?text=1" target="_blank">
+    <button style="padding: 15px 30px; font-size: 1.2rem; background-color: #0ff; color: #000; border: none; border-radius: 10px; box-shadow: 0 0 10px #0ff, 0 0 20px #f0f; cursor: pointer;">
+      tekan disini kalau kamu suka
+    </button>
+  </a>
+</div>
+
+    &copy; dibuat oleh Farhan Dwi Fadli Putra Pacarnya Batrisyia Damia Khairunnisa
+  </footer>
+
+  <script>
+    // Optional JS animations or interactivity can go here
+    console.log("Welcome to Neon Vibes ✨");
+  </script>
+  <script>
+  const footer = document.querySelector("footer");
+  const whatsappBox = document.getElementById("whatsapp-container");
+
+  window.addEventListener("scroll", function () {
+    const rect = footer.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight;
+
+    if (isVisible) {
+      whatsappBox.style.display = "block";
+    }
+  });
+</script>
+
+</body>
+
+</html>
