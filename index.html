@@ -321,16 +321,28 @@
 </section>
 
   <section id="contact">
-    <div class="neon-box">
-      <h2>Silahkan Diisi Sayangku</h2>
-      <form onsubmit="event.preventDefault(); alert('Message Sent!')">
-        <input type="text" placeholder="Siapa Orang yang kamu sayang" required style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;">
-        <input type="text" placeholder="Sebutkan makanan favorit awan :p" required style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;">
-        <textarea placeholder="Wishlist sayang buatt kedepannn" required style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+  <div class="neon-box">
+    <h2>Silahkan Diisi Sayangku</h2>
+    <form action="https://formsubmit.co/buzawan5@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="http://localhost:5500/#contact">
+      
+      <input type="text" name="siapa_sayang" placeholder="Siapa Orang yang kamu sayang" required 
+        style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;">
+      
+      <input type="text" name="makanan_favorit" placeholder="Sebutkan makanan favorit awan :p" required 
+        style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;">
+      
+      <textarea name="wishlist" placeholder="Wishlist sayang buatt kedepannn" required 
+        style="width:100%; margin-bottom:10px; padding:10px; border:none; background:#222; color:#0ff;"></textarea>
+      
+      <button type="submit" 
+        style="padding: 10px 20px; background: transparent; color: #0ff; border: 2px solid #0ff; border-radius: 5px; cursor: pointer;">
+        Send
+      </button>
+    </form>
+  </div>
+</section>
+
 
   <footer>
     <div id="whatsapp-container" style="display: none; text-align: center; margin: 40px 0;">
